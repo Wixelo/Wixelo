@@ -250,7 +250,7 @@ const doubled = [...showcases, ...showcases];
 /* ─── Section ─────────────────────────────────────────── */
 export default function Showcase() {
   return (
-    <section className="py-14 lg:py-20 bg-white dark:bg-slate-800/30 overflow-hidden" aria-label="Exemples de réalisations">
+    <section id="exemples" className="py-14 lg:py-20 bg-white dark:bg-slate-800/30 overflow-hidden" aria-label="Exemples de réalisations">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

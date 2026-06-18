@@ -27,19 +27,21 @@ interface FooterProps {
   onToggleTheme: () => void;
 }
 
+const navLinksCol1 = [
+  { label: 'Accueil',        href: '#hero'         },
+  { label: 'Services',       href: '#services'     },
+  { label: 'Notre process',  href: '#process'      },
+  { label: 'Nos créations',  href: '#testimonials' },
+];
+
+const navLinksCol2 = [
+  { label: 'Exemples',  href: '#exemples' },
+  { label: 'Tarifs',    href: '#pricing'  },
+  { label: 'FAQ',       href: '#faq'      },
+  { label: 'Contact',   href: '#contact'  },
+];
+
 const footerLinks = [
-  {
-    title: 'Navigation',
-    links: [
-      { label: 'Accueil',        href: '#hero'         },
-      { label: 'Services',       href: '#services'     },
-      { label: 'Notre process',  href: '#process'      },
-      { label: 'Nos créations',  href: '#testimonials' },
-      { label: 'Tarifs',         href: '#pricing'      },
-      { label: 'FAQ',            href: '#faq'          },
-      { label: 'Contact',        href: '#contact'      },
-    ]
-  },
   {
     title: 'Nos créations',
     links: [
@@ -54,10 +56,10 @@ const footerLinks = [
   {
     title: 'Légal',
     links: [
-      { label: 'Mentions légales',            href: '#' },
-      { label: 'CGV',                         href: '#' },
-      { label: 'Politique de confidentialité',href: '#' },
-      { label: 'Cookies',                     href: '#' },
+      { label: 'Mentions légales',             href: '#' },
+      { label: 'CGV',                          href: '#' },
+      { label: 'Politique de confidentialité', href: '#' },
+      { label: 'Cookies',                      href: '#' },
     ]
   },
 ];
@@ -90,10 +92,10 @@ export default function Footer({ isDark, onToggleTheme }: FooterProps) {
         </div>
 
         {/* Main footer */}
-        <div className="py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10">
 
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="sm:col-span-2 lg:col-span-2">
             <a href="#" className="flex items-center gap-2.5 mb-4 group" aria-label="Wixelo — Accueil">
               <div className="shrink-0 group-hover:scale-105 transition-transform duration-300">
                 <WixeloLogo id="wg-footer" />
@@ -121,7 +123,32 @@ export default function Footer({ isDark, onToggleTheme }: FooterProps) {
             </div>
           </div>
 
-          {/* Links */}
+          {/* Navigation — 2 inner columns */}
+          <div className="sm:col-span-2 lg:col-span-2">
+            <h3 className="text-white font-semibold text-sm mb-4">Navigation</h3>
+            <div className="grid grid-cols-2 gap-x-4">
+              <ul className="space-y-2.5" role="list">
+                {navLinksCol1.map(link => (
+                  <li key={link.label}>
+                    <a href={link.href} className="text-sm text-slate-400 hover:text-white transition-colors duration-200">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <ul className="space-y-2.5" role="list">
+                {navLinksCol2.map(link => (
+                  <li key={link.label}>
+                    <a href={link.href} className="text-sm text-slate-400 hover:text-white transition-colors duration-200">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Other link sections */}
           {footerLinks.map(section => (
             <div key={section.title}>
               <h3 className="text-white font-semibold text-sm mb-4">{section.title}</h3>
