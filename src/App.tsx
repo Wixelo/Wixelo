@@ -4,9 +4,11 @@ import Hero from './components/Hero';
 import SocialProof from './components/SocialProof';
 import Services from './components/Services';
 import Process from './components/Process';
-import Contact from './components/Contact';
+import Testimonials from './components/Testimonials';
+import Showcase from './components/Showcase';
 import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
         <SocialProof />
         <Services />
         <Process />
+        <Testimonials />
+        <Showcase />
         <Pricing />
         <FAQ />
         <Contact />

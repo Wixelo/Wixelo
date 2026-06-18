@@ -201,6 +201,18 @@
   animation-play-state: paused;
 }
 
+.showcase-track {
+  display: flex;
+  width: max-content;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  animation: marquee 28s linear infinite;
+}
+
+.showcase-track:hover {
+  animation-play-state: paused;
+}
+
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
