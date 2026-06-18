@@ -33,7 +33,9 @@ const navLinks = [
   { label: 'Accueil', href: '#hero' },
   { label: 'Services', href: '#services' },
   { label: 'Process', href: '#process' },
+  { label: 'Nos créations', href: '#testimonials' },
   { label: 'Tarifs', href: '#pricing' },
+  { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ];
 
