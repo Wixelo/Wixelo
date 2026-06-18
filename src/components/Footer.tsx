@@ -29,30 +29,35 @@ interface FooterProps {
 
 const footerLinks = [
   {
-    title: 'Services',
+    title: 'Navigation',
     links: [
-      { label: 'Design & UX', href: '#services' },
-      { label: 'Développement Web', href: '#services' },
-      { label: 'Performance', href: '#services' },
-      { label: 'SEO & Croissance', href: '#services' },
+      { label: 'Accueil',        href: '#hero'         },
+      { label: 'Services',       href: '#services'     },
+      { label: 'Notre process',  href: '#process'      },
+      { label: 'Nos créations',  href: '#testimonials' },
+      { label: 'Tarifs',         href: '#pricing'      },
+      { label: 'FAQ',            href: '#faq'          },
+      { label: 'Contact',        href: '#contact'      },
     ]
   },
   {
-    title: 'Agence',
+    title: 'Nos créations',
     links: [
-      { label: 'Notre process', href: '#process' },
-      { label: 'Témoignages', href: '#testimonials' },
-      { label: 'Blog (bientôt)', href: '#' },
-      { label: 'Carrières', href: '#' },
+      { label: 'Site vitrine',       href: '#testimonials' },
+      { label: 'Landing page',       href: '#testimonials' },
+      { label: 'E-commerce',         href: '#testimonials' },
+      { label: 'Refonte complète',   href: '#testimonials' },
+      { label: 'Maintenance',        href: '#testimonials' },
+      { label: 'Référencement SEO',  href: '#testimonials' },
     ]
   },
   {
     title: 'Légal',
     links: [
-      { label: 'Mentions légales', href: '#' },
-      { label: 'CGV', href: '#' },
-      { label: 'Politique de confidentialité', href: '#' },
-      { label: 'Cookies', href: '#' },
+      { label: 'Mentions légales',            href: '#' },
+      { label: 'CGV',                         href: '#' },
+      { label: 'Politique de confidentialité',href: '#' },
+      { label: 'Cookies',                     href: '#' },
     ]
   },
 ];
