@@ -137,17 +137,6 @@ export default function Process() {
                   {card.description}
                 </p>
 
-                {/* Extra visual for the wide card */}
-                {card.wide && (
-                  <div className="flex flex-wrap items-center gap-2 mt-5">
-                    {['Maintenance proactive', 'Mises à jour hebdo', 'Hotline dédiée', 'Monitoring 24/7', 'Évolutions itératives'].map(tag => (
-                      <span key={tag} className="inline-flex items-center gap-1 text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/50 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 px-2.5 py-1 rounded-full transition-colors duration-200 cursor-default">
-                        <Zap className="w-3 h-3 text-blue-500" aria-hidden="true" />
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
               </motion.div>
             );
           })}
